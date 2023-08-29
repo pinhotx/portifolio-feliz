@@ -1,0 +1,196 @@
+/* Variáveis*/
+:root{
+  --violet: #9224FF;
+  --pink: #FF69B4;
+  --ice: #f0f0f0;
+  --orange: #FE7545;
+  --yellow: #FDFF82;
+  --test_border: 1px solid #f00;
+}
+/* DEFINIÇÕES GERAIS */
+
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+  display: inline;
+}
+
+header{
+  text-align: right;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+  padding: 16px 0px;
+  /* padding: eixoY eixoX;*/
+  background-color: #9224FF;
+  border-bottom:  8px solid #FF69B4;
+
+}
+
+header a{
+  color: #fff;
+  margin-right: 40px;
+  text-transform: uppercase;
+  transition: font-size 0.2s, color 0.5s, text-decoration 0.4s;
+}
+
+header a:hover{
+  color: var(--yellow);
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: large;
+}
+
+section#banner a{
+  transition: color 0.5s, text-decoration 0.4s;
+}
+
+#link-youtube{
+  color: #FE7545;
+}
+
+#link-twitch{
+  color: #9224FF;
+}
+
+section#banner a:hover{
+  color: #FF69B4;
+  text-decoration: underline;
+
+}
+
+/* SECTION */
+section{
+  padding: 64px 128px;
+}
+
+section p{
+  margin: 24px 0px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+section h1{
+  font-size: 24px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+/* BANNER */
+section#banner{
+  background-color: #000;
+  color:#fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section#banner h1{
+  font-weight: bolder;
+  font-size: 56px;
+}
+
+section#banner h1 span{
+  color: hotpink;
+}
+
+section#banner p{
+  margin: 24px 0px 36px 0px;
+  text-align: center;
+}
+
+section#banner a#linkMeusTrabalhos{
+  color: white;
+  background-color: blueviolet;
+  padding: 12px 6px;
+}
+
+/* SOBRE MIM */
+
+section#sobreMim{
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 
+  section#sobreMim div{ 
+  border: 1px solid #f00;
+  float: left; 
+  width: 30%;
+  box-sizing: border-box;
+} 
+*/
+/* Float - O tamanho do conteúdo não é calculado */
+
+section#sobreMim div{
+  border: 1px solid #f00;
+  /* width: 15%; */
+  
+}
+
+section#sobreMim div:nth-child(2){ /* Selecionar o enésimo elemento filho*/
+  padding-left: 24px 0;
+  width: 70%;
+}
+
+
+section#sobreMim p.clearfix{
+  clear: both;
+} 
+
+section#conhecimento{
+  background-color: white;
+}
+
+section#experiencia{
+  background-color: hotpink;
+}
+
+section#portifolio{
+  background-color: white;
+}
+
+section#contato{
+  background-color: hotpink;
+}
+
+section#contato > div{
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section#contato div:nth-child(1), section#contato div:nth-child(2){
+  width: 50%;
+}
+
+/* Titulos */
+.textoRoxo{
+  color: blueviolet;
+}
+
+.textoPreto{
+  color: black;
+}
+
+.textoClaro{
+  color:white;
+}
+.textoEscuro{
+  color: Black;
+}
+
+/* TODO: Escrever um resumo sobre 
+  * fontes sem serifa e com serifa, porque e quando são usadas
+  * href = Home Page Reference
+  * line-height - Espaçamento entre linhas
+  * 
+*/
