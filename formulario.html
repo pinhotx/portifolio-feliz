@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <form action="dados.html">
+    <input type="text" name="Nome" id="name_form">
+    <br>
+    <select name="" id="">
+      <option value="">ES</option>
+      <option value="">MG</option>
+      <option value="" selected>SP</option>
+      <option value="">RJ</option>
+    </select>
+    <br>
+    <label>Gênero:</label> <!-- TODO: Radio button serve para escolher dentre opções únicas
+      usa-se checked para definir a opção padrão
+    -->
+    <input name="genero" checked type="radio" id="option-female"> 
+    <label for="option-female">Feminino</label>
+    <input name="genero" type="radio" id="option-male"> 
+    <label for="option-male">Masculino</label>
+    <input name="genero" type="radio" id="option-non-binary"> 
+    <label for="option-non-binary">Não binário </label>
+    <input name="genero" type="radio" id="no-option"> 
+    <label for="no-option">Prefiro não informar</label>
+    <br>
+    <!-- TODO: Checkbox serve para escolher dentre opções multiplas
+      usa-se checked para definir a opção padrão
+    -->
+    <!-- Para corretamente funcionar ao clicar em seu nome(Label) cria-se uma tag label-->
+  
+    <input type="checkbox" name="interesses" id="books"/>
+    <label for="books">Livros</label>
+    <input type="checkbox" name="interesses" id="series"/>
+    <label for="series">Séries</label>
+    <input type="checkbox" name="interesses" id="story"/>
+    <label for="story">História</label>
+    <input type="checkbox" name="interesses" id="music"/>
+    <label for="music">Música</label>
+    <br>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <br>
+    <input type="submit" value="Cadastrar"/> <!-- TODO: O input Submit trata-se do botão usado para 
+      enviar as infos do formulário para a action definda no form, 
+      usa-se o atributo value para mudar o nome do botão-->
+    <button type="submit">Enviar</button><!-- Alternativamente pode-se usar o Botão Submit 
+      para uma melhor semântica em relação ao objeto que executa o submit, 
+      nesse caso um botão-->
+  </form>
+</body>
+</html>
