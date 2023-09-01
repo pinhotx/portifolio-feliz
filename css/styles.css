@@ -110,6 +110,7 @@ section#banner a#linkMeusTrabalhos{
   color: white;
   background-color: blueviolet;
   padding: 12px 6px;
+  border-radius: 0.5em;
 }
 
 /* SOBRE MIM */
@@ -162,15 +163,17 @@ section#contato{
   background-color: hotpink;
 }
 
-section#contato > div{
-  width: 400px;
+section#contato #contato-coluna{
   display: flex;
-  justify-content: space-between;
 }
 
-section#contato div:nth-child(1), section#contato div:nth-child(2){
+section#contato #contato-coluna div{
   width: 50%;
+
 }
+
+/* section#contato div:nth-child(1), section#contato div:nth-child(2){
+} */
 
 /* Titulos */
 .textoRoxo{
