@@ -164,7 +164,7 @@ section#conhecimento progress::-webkit-progress-bar {
 }
 
 section#conhecimento progress::-webkit-progress-value {
-  background-color: var(--ice);
+  background-color: var(--pink);
 }
 
 section#conhecimento label{
