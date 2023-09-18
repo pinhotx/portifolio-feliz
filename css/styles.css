@@ -151,6 +151,28 @@ section#conhecimento{
   background-color: white;
 }
 
+section#conhecimento progress{
+  height: 32px;
+  border-radius: unset;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+section#conhecimento progress::-webkit-progress-bar { 
+  background: var(--violet);
+}
+
+section#conhecimento progress::-webkit-progress-value {
+  background-color: var(--pink);
+}
+
+section#conhecimento label{
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--violet);
+  text-transform: uppercase;
+}
+
 section#experiencia{
   background-color: hotpink;
 }
@@ -169,11 +191,38 @@ section#contato #contato-coluna{
 
 section#contato #contato-coluna div{
   width: 50%;
-
+  background-color: #fff;
+  padding: 8px 4px;
 }
 
 /* section#contato div:nth-child(1), section#contato div:nth-child(2){
 } */
+
+label{
+  color: #a0a0a0;
+  font-size: 12px;
+}
+input{
+  height: 28px;
+}
+input, textarea{
+  border: 0px;
+  border-bottom: 1px solid #a0a0a0;
+  width: 100%;
+  margin: 16px 0px 16px 0px;
+}
+
+div.coluna form{
+  clear: both;
+}
+
+
+
+
+
+div.coluna form button[type="submit"]{
+  float: right
+}
 
 /* Titulos */
 .textoRoxo{
