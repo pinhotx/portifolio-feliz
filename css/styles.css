@@ -183,16 +183,17 @@ section#portifolio{
 }
 
 section#contato{
-  background-color: hotpink;
+  background-color: var(--pink);
 }
 
 section#contato #contato-coluna{
   display: flex;
+  padding: 16px;
+  background-color: #fff;
 }
 
 section#contato #contato-coluna div{
   width: 50%;
-  background-color: #fff;
   padding: 8px 4px;
 }
 
@@ -203,26 +204,33 @@ label{
   color: #a0a0a0;
   font-size: 12px;
 }
-input{
-  height: 28px;
+#contato textarea{
+  height: 128px;
 }
 input, textarea{
   border: 0px;
   border-bottom: 1px solid #a0a0a0;
   width: 100%;
-  margin: 16px 0px 16px 0px;
+  margin: 16px 0px 24px 0px;
+  height: 28px;
+  font-size: 16px;
 }
 
+/* Mover botão enviar para o canto direito*/
 div.coluna form{
   clear: both;
 }
 
-
-
-
-
 div.coluna form button[type="submit"]{
-  float: right
+  float: right;
+  border: unset;
+  text-transform: uppercase;
+  color: var(--pink);
+  font-weight: bold;
+  background-color: unset;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 16px 0px;
 }
 
 /* Titulos */
