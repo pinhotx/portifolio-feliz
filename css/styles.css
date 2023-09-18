@@ -159,11 +159,12 @@ section#conhecimento progress{
 }
 
 section#conhecimento progress::-webkit-progress-bar { 
-  background: var(--violet);
+  background: var(--ice);
+  border: 1px solid var(--pink);
 }
 
 section#conhecimento progress::-webkit-progress-value {
-  background-color: var(--pink);
+  background-color: var(--ice);
 }
 
 section#conhecimento label{
