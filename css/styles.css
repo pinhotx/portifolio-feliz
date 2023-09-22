@@ -8,11 +8,14 @@
   --test_border: 1px solid #f00;
 }
 /* DEFINIÇÕES GERAIS */
-
+html{
+  scroll-behavior: smooth;
+}
 
 
 body{
   font-family: 'Roboto', sans-serif;
+
 }
 
 a{
@@ -49,16 +52,14 @@ header a:hover{
   font-size: large;
 }
 
+/* SECTION */
+section{
+  padding: 64px 128px;
+}
+
+
 section#banner a{
   transition: color 0.5s, text-decoration 0.4s;
-}
-
-#link-youtube{
-  color: #FE7545;
-}
-
-#link-twitch{
-  color: #9224FF;
 }
 
 section#banner a:hover{
@@ -67,9 +68,12 @@ section#banner a:hover{
 
 }
 
-/* SECTION */
-section{
-  padding: 64px 128px;
+a#link-youtube{
+  color: #FE7545;
+}
+
+a#link-twitch{
+  color: #9224FF;
 }
 
 section p{
@@ -175,6 +179,19 @@ section#conhecimento label{
 
 section#experiencia{
   background-color: hotpink;
+
+}
+
+section#experiencia div{
+  
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section#experiencia div img{
+  width: max-content;
+  height: 128px;
 }
 
 section#portifolio{
@@ -232,6 +249,33 @@ div.coluna form button[type="submit"]{
   margin: 16px 0px;
 }
 
+/* TODO: Escrever um resumo sobre 
+  * fontes sem serifa e com serifa, porque e quando são usadas
+  * href = Home Page Reference
+  * line-height - Espaçamento entre linhas
+  * 
+*/
+footer{
+  color: #555;
+  font-size: 12px;
+  text-align: center;
+  padding: 24px;
+  
+}
+
+footer a{
+  color: var(--violet);
+  transition: font-size 0.2s, color 0.5s, text-decoration 0.4s;
+}
+footer a:hover{
+  color: var(--ice);
+  font-size: 16px;
+  text-decoration: wavy;
+  background-color: var(--violet);
+  padding: 2px;
+  border-radius: 4px;
+}
+
 /* Titulos */
 .textoRoxo{
   color: blueviolet;
@@ -247,10 +291,3 @@ div.coluna form button[type="submit"]{
 .textoEscuro{
   color: Black;
 }
-
-/* TODO: Escrever um resumo sobre 
-  * fontes sem serifa e com serifa, porque e quando são usadas
-  * href = Home Page Reference
-  * line-height - Espaçamento entre linhas
-  * 
-*/
