@@ -38,18 +38,51 @@ header{
 
 }
 
-header a{
+header nav a{
   color: #fff;
   margin-right: 40px;
   text-transform: uppercase;
   transition: font-size 0.2s, color 0.5s, text-decoration 0.4s;
 }
 
-header a:hover{
+header nav a:hover{
   color: var(--yellow);
   text-decoration: underline;
   font-weight: bold;
   font-size: large;
+}
+
+header nav div#dev-mode{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  background-color: var(--orange);
+  border-radius: 0.2em;
+  margin: 8px;
+}
+
+header nav div#dev-mode a{
+  color: var(--ice);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0px 8px;
+}
+
+header nav div#dev-mode a:hover {
+  color: var(--yellow);
+  text-decoration: underline;
+}
+
+header nav #logonav{
+  float: left;
+  margin-left: 40px;
+  font-family: "Roboto", sans-serif;
 }
 
 /* SECTION */
